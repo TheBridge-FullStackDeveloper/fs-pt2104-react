@@ -1,3 +1,37 @@
 body {
-  color: red;
+  margin: 0;
+  min-height: 100%;
+  background-color: #fff;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  
+}
+#nav {
+  
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #22172b;
+}
+#logo{
+  position: relative;
+  float: left;
+}
+.image-2 {
+  width: 180px;
+  max-width: none;
+  margin-top: 0px;
+}
+.rowli {
+  display: flex;
+  flex-direction: row;
+  font-family: Mulish, sans-serif; 
+  color: #fff;
+}
+#sec1{
+  display: flex;
+  flex-direction: row;
+  background-image: url(https://uploads-ssl.webflow.com/60780bf…/60abc64…_Union.png);
 }

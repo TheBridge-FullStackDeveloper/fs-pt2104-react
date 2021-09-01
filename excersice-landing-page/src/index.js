@@ -6,11 +6,9 @@ import nav from '../src/components/Nav';
 import section1 from '../src/components/Sec1';
 import section2 from '../src/components/Sec2';
 
-// const App = (
-//   <div>
-//     Hello React
-//   </div>
-// );
+const App = (
+  <nav/>
+);
 
 
 // const name = "Manolo la cena te la haces solo"; 
@@ -43,7 +41,7 @@ import section2 from '../src/components/Sec2';
 // const element3 = getGreeting(user);
 
 
-ReactDOM.render(nav(), document.getElementById("nav"));
+ReactDOM.render(App, document.getElementById("nav"));
 ReactDOM.render(section1(), document.getElementById("sec1"));
 ReactDOM.render(section2(), document.getElementById("sec2"));
 

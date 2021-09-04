@@ -2,7 +2,7 @@ import React from "react";
 import data from '../../data.json';
 
 
-export default function nav(){
+const Nav = () =>{
   return (
     <div>
       <img alt="logo" src={data.navbar.img} id="logo" class="image-2"></img>
@@ -12,3 +12,5 @@ export default function nav(){
     </div>
   );
 };
+
+export default Nav;

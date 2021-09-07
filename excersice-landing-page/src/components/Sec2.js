@@ -1,7 +1,7 @@
 import React from "react";
 import data from '../../data.json';
 
-const Card = props => {
+const Card = (props) => {
    return(
     <div>
        <h3>{props.bootcamps.title}</h3>
@@ -15,6 +15,8 @@ const Card = props => {
 }
 
 function Section2 (){
+    // const bootTypes = ["data.bootcamps.cs","data.bootcamps.ds","data.bootcamps.fs","data.bootcamps.dm","data.bootcamps.ux"];
+    // {bootTypes.map(boot=><Card bootcamps={boot}  />)}
   return (
     <div>
         <p>{data.bootcamps.header}</p>

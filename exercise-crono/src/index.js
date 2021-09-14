@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './pages'
+import Clock from './components/Clock';
+import Crono from './components/Crono'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Clock />
+    <Crono />
   </React.StrictMode>,
   document.getElementById('root')
 )

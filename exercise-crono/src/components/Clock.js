@@ -3,10 +3,6 @@ import { useState, useEffect } from "react";
 const Clock = () =>{
    const [time,setTime]=useState(setTimeNow);
    
-//    setInterval(() => {
-//        setTime(setTimeNow)
-//    }, 1000);
-
    useEffect(() => {
     setInterval(() => {
       setTime(setTimeNow)

@@ -36,7 +36,7 @@ const Home = () => {
                     pokemons.filter(({name,id}) => {
                             console.log("pokemos",typeof(id))
                             console.log("search",typeof(search))
-                            return (name.includes(search) || id === parseInt(search))       
+                            return (name.includes(search) || id === parseInt(search))           
                     })
                     .map(({sprites, name},index)=>{
                         return(

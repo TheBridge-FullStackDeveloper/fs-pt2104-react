@@ -9,14 +9,14 @@ import {
 } from 'react-router-dom';
 
 import Home from './pages/home';
-import Details from './pages/details'
+import Details from './pages/details';
 ReactDOM.render(
   <React.StrictMode>
   <Provider>
      <Router>
       <Switch>
-        <Route exact path="/" component={Home} />
         <Route exact path="/details/:id" component={Details} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </Router>
   </Provider>

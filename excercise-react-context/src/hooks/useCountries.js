@@ -9,7 +9,7 @@ const useCountries = () => {
     useEffect(() => {
         (async () => {
             const result = (await axios.get(api)).data;
-            setCountries(prev => [...prev, result]);
+            setCountries(prev => [...prev, ...result]);
             
         })();
     },[]);

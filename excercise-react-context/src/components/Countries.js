@@ -11,12 +11,12 @@ const Countries = () => {
     return (
         <section>
             <h1>Listado de paises</h1>
-            <ul>
+            <ul className="listCountries">
                 {countries.map((el,i)=>(
                     <li>
                     
-                        <Link to={`/details/${i}`} key={i}>
-                            {el.name}
+                        <Link to={`/details/${i}`} key={i} className="listCountry">
+                            <span>{el.name}: </span>
                             <img src={el.flag} alt={el.name}/>
                         </Link>
                     </li>))}

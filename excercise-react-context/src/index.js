@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Provider from "./state/Provider";
+import "./css/index.css" ;
 import { 
   BrowserRouter as Router,
   Switch,

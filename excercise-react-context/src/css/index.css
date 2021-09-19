@@ -1,0 +1,30 @@
+
+h1 {
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 2%;
+}
+img {
+    width: 25%;
+    margin-bottom: 2%;
+}
+.listCountry {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    width: 40%;
+    
+}
+.listCountries{
+    list-style:none; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+}
+span{
+    margin-bottom: 2%;
+}

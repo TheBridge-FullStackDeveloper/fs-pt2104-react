@@ -19,6 +19,7 @@ const Home = () => {
             for await (let pokemon of result.results){
                const itemPokemon = (await axios.get(pokemon.url)).data;
                setPokemons(prev => [...prev,itemPokemon]);
+               
             }
             
         })();
@@ -33,10 +34,18 @@ const Home = () => {
             </section>
             <section>      
                 {
-                    pokemons.filter(({name,id}) => {
-                            console.log("pokemos",typeof(id))
-                            console.log("search",typeof(search))
-                            return (name.includes(search) || id === parseInt(search))           
+                    pokemons.filter(({name,id,types},i) => {
+                            const result = types.filter(el=>{
+                                if (!!(el.type.name.includes(search))){
+                                    return el.type.name;    
+                                } 
+                                })
+                            if (name.includes(search) || id === parseInt(search) || result.length === 1){
+                                return true;
+                            }
+                            else{
+                                
+                            }
                     })
                     .map(({sprites, name},index)=>{
                         return(
